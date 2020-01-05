@@ -1,0 +1,289 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  font-family: lato;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+a{
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+p{
+  line-height: 150%;
+}
+.fix{
+  overflow: hidden;
+}
+/*--------------------------------------------------------*/
+
+.container_full{
+  width: 100%;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*body design start*/
+
+
+.allcategories{
+}
+#categories{
+  background: none;
+  border: none;
+  width: 255px;
+  height: 60px;
+  background-color: #d1d2d5;
+  font-size: 18px;
+  color: #252525;
+  padding: 0px 10px;
+  margin: 50px 67px;
+}
+
+.content_wrapper_bg{
+  margin-top: -5px;
+  border-bottom: 1px solid #e1e0e0;
+}
+.content_wrapper{
+  overflow: hidden;
+  padding-top: 75px;
+}
+
+.left_content{
+  float: left;
+  width: 620px;
+  margin-right: 70px;
+}
+.left_content .single_post_wrapper{
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.left_content .single_post_wrapper h5{
+  font-family: lato;
+  font-size: 15px;
+  color: #4f4e4e;
+  padding-left: 15px;
+  padding-top: 15px; 
+}
+.left_content .single_post_wrapper .heading h2{
+  border-left: 3px solid #41c84e;
+}
+.left_content .single_post_wrapper h2{
+  font-family: lato;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #4f4e4e;
+  padding: 10px 10px;
+  background: #f8f8f8;
+}
+
+.left_content .single_post_wrapper .icon-set-date{
+  float: right;
+  margin-left: 14px;
+  font-size: 12px;
+  color: #fbb710;
+  display: block;
+  margin: 19px 15px;
+}
+.left_content .single_post_wrapper p{
+  font-family: lato;
+  font-size: 20px;
+  text-align: justify;
+  color: #606060;
+  padding-left: 15px;
+  padding-top: 30px;
+}
+.like {
+  margin: 0px 5px;
+  float: right;
+}
+.like a{
+  color: #41c84e;;
+}
+.like a:hover{
+  text-decoration: underline;
+}
+.comments{
+  margin: 0px 5px;
+  float: right;
+}
+.comments a{
+  color: #606060;
+}
+.comments a:hover{
+  text-decoration: underline;
+}
+
+#sidebar{
+  float: right;
+  width: 280px;
+}
+#sidebar .single_sidebar{
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+#sidebar .single_sidebar h2{
+  font-family: lato;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-left: 3px solid #41c84e;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #6c6969;
+  background: #f8f8f8;
+  margin-bottom: 15px;
+}
+#sidebar .single_sidebar p{
+font-family: lato;
+font-weight: bold;
+font-size: 16px;
+color: #737373;
+width: 98%;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.comnt{
+  background-color: #fff;
+  border-bottom: 1px solid #e1e0e0;
+}
+.comment{
+  height: 120px;
+  margin: 20px 0px;
+  border: 2px solid #a09e9e;
+  border-radius: 5px;
+  background: #d4d0d0;
+}
+.comment .name{
+  width: 1000px;
+  height: 30px;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+.comment .email{
+  width: 1000px;
+  height: 30px;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+.comment .coment{
+  width: 956px;
+  background: #f1f1f1;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.table_bgs{
+  background-image: url(../images/leavecomment.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.booktable{
+  width: 1000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.booktable h1{
+  color: #fff;
+  text-align: center;
+  margin: 20px 0px;
+}
+.booktable form{
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+.booktable label{
+  width: 500px;
+}
+input[type=text]{
+  width: 400px;
+  height: 40px;
+  border: 2px solid #2ecc71;
+  border-radius: 5px;
+  background: none;
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+input[type=email]{
+  width: 400px;
+  height: 40px;
+  border: 2px solid #2ecc71;
+  border-radius: 5px;
+  background: none;
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.btnnn{
+  width: 120px;
+  height: 60px;
+  border: 1px solid #2ecc71;
+  border-radius: 5px;
+  color: #fff;
+  background: #25ea56;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 19px;
+  cursor: pointer;
+}
+.btnnn:hover{
+  background-color: #158832;
+}
+
+select option{
+  background: none;
+}
+.booktable p{
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin: 15px 13px;
+}
+#addrs{
+  width: 950px;
+  height: 140px;
+  border: 2px solid #2ecc71;
+  border-radius: 5px;
+  background: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 18px;
+  padding: 0px 20px;
+}
+
+/*body design finish*/
+
+.gototop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}

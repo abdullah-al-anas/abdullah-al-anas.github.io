@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:lato;
+}
+
+
+/*--------------------------------------------------------*/
+#section-style{
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+}
+#section-style .content{
+  max-width: 60%;
+}
+#section-style .content h2{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 4em;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+#section-style .content h2[data-scroll="in"]{
+  transform: scaleX(1);
+}
+#section-style .content h2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2add54;
+  transform-origin: right;
+  transition: 0.5s;
+}
+#section-style .content h2[data-scroll="in"]:before{
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+#section-style .content h3{
+  position: relative;
+  margin: 10px 0px;
+  padding: 0;
+  display: inline-block;
+  font-size: 2em;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+#section-style .content h3[data-scroll="in"]{
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+#section-style .content h3:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffeb3b;
+  transform-origin: right;
+  transition: 0.5s;
+}
+#section-style .content h3[data-scroll="in"]:before{
+  transform: scaleX(0);
+  transition-delay: 1.5s;
+}
+#section-style .content p{
+  font-size: 1.2em;
+  transition: 1s;
+  opacity: 0;
+}
+#section-style .content p[data-scroll="in"]{
+  opacity: 1;
+  transition-delay: 1.5s;
+}
+.gototop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.gototop:hover{
+  background: #00C9FF; 
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
+  background: linear-gradient(to right, #92FE9D, #00C9FF); 
+}
+.cont{
+  position: relative;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cont .boxes{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 20px 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.cont .boxes .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(400px at center 100px);
+  transition: 0.5s ease;
+  transition-delay: 0.5s;
+}
+.cont .boxes:hover .imgBx{
+  clip-path: circle(80px at center 100px);
+}
+.cont .boxes:hover .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cont .boxes .contt{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cont .boxes .contt h2{
+  margin: 0;
+  padding: 0;
+}
+.cont .boxes .contt a{
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+}
+.cont .boxes .contt h2,
+.cont .boxes .contt p,
+.cont .boxes .contt a{
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
+}
+.cont .boxes:hover .contt h2{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.5s;
+}
+.cont .boxes:hover .contt p{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
+.cont .boxes:hover .contt a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.9s;
+}

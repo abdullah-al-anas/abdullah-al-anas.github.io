@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: auto;
+    scroll-behavior: smooth;
+}
+body{
+  font-family: lato;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+
+/*body design start*/
+
+.img .imgs{
+  width: 1000px;
+  height: 500px;
+}
+.imgcontainer {
+  text-align: right;
+  position: relative;
+}
+span.close {
+  float: right;
+  padding-top: 16px;
+  padding: 0px 20px;
+  font-size: 27px;
+  color: #444343;
+  cursor: pointer;
+}
+span.close:hover{
+  color: red;
+}
+.cancelbtn {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.cencelbtn:hover{
+  background-color: #ca3429;
+}
+.contains {
+  padding: 16px;
+  background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.contains h2{
+  text-align: center;
+}
+
+.btton{
+  background-color: #1ff77b;
+  color: #000;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btton:hover {
+  opacity: 0.8;
+}
+.btton .fa{
+  color: #fff;
+}
+.btn{
+  background-color: #36db76;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 29%;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.close {
+     display: block;
+     float: none;
+  }
+
+}
+
+
+
+.content_wrapper_bg{
+  margin-top: -5px;
+  border-bottom: 1px solid #e1e0e0;
+}
+.content_wrapper{
+  overflow: hidden;
+  padding-top: 75px;
+}
+.content_wrapper .like-commnet-share{
+  background: #f1eeee;
+  width: 487px;
+  height: 20px;
+  margin: 0px 30px;
+  display: block;
+}
+.content_wrapper .like-commnet-share .like{
+  width: 120px;
+  height: 20px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+.content_wrapper .like-commnet-share .commnt{
+  width: 120px;
+  height: 20px;
+  display: inline;
+  float: left;
+  margin: 0px 51px; 
+}
+.content_wrapper .like-commnet-share .share{
+  width: 120px;
+  height: 20px;
+  display: inline;
+  float: right;
+  margin-left: 10px;
+}
+
+.content_wrapper .like-commnet-share p{
+  text-align: center;
+  font-size: 15px;
+  color: #606060;
+}
+.left_content{
+  float: left;
+  width: 620px;
+  margin-right: 70px;
+}
+.left_content .single_post_wrapper{
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.left_content .single_post_wrapper .heading h2{
+  border-left: 3px solid #41c84e;
+}
+.left_content .single_post_wrapper h2{
+  font-family: lato;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #4f4e4e;
+  padding: 10px 10px;
+  background: #f8f8f8;
+}
+
+.left_content .single_post_wrapper .icon-set-date{
+  float: right;
+  margin-left: 14px;
+  font-size: 12px;
+  color: #fbb710;
+  display: block;
+  margin: 19px 15px;
+}
+.left_content .single_post_wrapper p{
+  font-family: lato;
+  font-size: 20px;
+  text-align: justify;
+  color: #606060;
+  padding-left: 15px;
+  padding-top: 30px;
+}
+
+
+#sidebar{
+  float: right;
+  width: 280px;
+}
+#sidebar .single_sidebar{
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+#sidebar .single_sidebar h2{
+  font-family: lato;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-left: 3px solid #41c84e;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #6c6969;
+  background: #f8f8f8;
+  margin-bottom: 15px;
+}
+#sidebar .single_sidebar p{
+  font-family: lato;
+  font-weight: bold;
+  font-size: 16px;
+  color: #737373;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #e9e8e8;
+}
+.comnt{
+  background-color: #fff;
+  border-bottom: 1px solid #e1e0e0;
+}
+.comment{
+  height: 120px;
+  margin: 20px 0px;
+  border: 2px solid #a09e9e;
+  border-radius: 5px;
+  background: #d4d0d0;
+}
+.comment .name{
+  width: 1000px;
+  height: 30px;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+.comment .email{
+  width: 1000px;
+  height: 30px;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+.comment .coment{
+  width: 956px;
+  background: #f1f1f1;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.table_bg{
+  background: #00C9FF;
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  
+  background: linear-gradient(to right, #92FE9D, #00C9FF); 
+
+}
+
+input[type=text],
+input[type=email]{
+  width: 97%;
+  height: 40px;
+  border: 2px solid #2ecc71;
+  border-radius: 5px;
+  background: none;
+  color: #737373;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+
+select option{
+  background: none;
+}
+
+#addres{
+  width: 97%;
+  height: 140px;
+  border: 2px solid #2ecc71;
+  border-radius: 5px;
+  background: none;
+  color: #737373;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+/*body design finish*/
+
+
+
+.gototop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 70px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  z-index: 111;
+}
+.gototop:hover{
+  background: #00C9FF; 
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
+  background: linear-gradient(to right, #92FE9D, #00C9FF); 
+}
